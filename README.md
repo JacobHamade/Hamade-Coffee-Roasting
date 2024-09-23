@@ -44,7 +44,7 @@ Roasting Profiles/
             └── JacobTaylor_2024_09_15-FirstBatch.alog
 ```
 
-##### Note
+#### Note:
 Inside of the Company Purchased From directory, you can store information about the bean--see `Roasting Profiles/Columbia Supremo/RoastMasters.com/About.heic` for an example.
 
 ## Profile Naming Convention
@@ -71,9 +71,6 @@ This helps keep consistency across the profiles.
 
 1. **Commit Directly to Main**: Simply commit your roast profile directly to the `main` branch. You can detail your commit titles and bodies in any format.
 2. **Follow the Naming Convention**: Ensure the roasting profile follows the [Profile Naming Convention](#profile-naming-convention) and structure mentioned above.
-
-
-
-
-
-### Happy roasting!
+<br></br>
+<br></br>
+### Happy roasting! ☕️
