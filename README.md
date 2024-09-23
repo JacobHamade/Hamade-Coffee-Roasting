@@ -5,6 +5,7 @@ Welcome to the **Hamade Coffee Roasting Repo**! This repository is dedicated to 
 ## Table of Contents
 
 - [Overview](#overview)
+- [Roasting Software](#roasting-software)
 - [Roasting Profiles Organization](#roasting-profiles-organization)
 - [Profile Naming Convention](#profile-naming-convention)
 - [How to Contribute](#how-to-contribute)
@@ -12,6 +13,14 @@ Welcome to the **Hamade Coffee Roasting Repo**! This repository is dedicated to 
 ## Overview
 
 This repository has been designed to store and maintain the various coffee roasting profiles that we make. It can also contain sibling directories for further information--see `Knowledge/Books/The Coffee Roasters Companion.pdf` for an example!
+
+## Roasting Software
+
+We use **Artisan** to interface with our Hottop KN-8828B-2K+ Digital Drum Roaster, and to work with roast profiles. Artisan is an open-source software.
+
+Artisan supports **Linux**, **macOS**, and **Windows**. You can download it [here](https://artisan-scope.org/download/).
+
+For more information, visit the official [Artisan website](https://artisan-scope.org/).
 
 ## Roasting Profiles Organization
 
