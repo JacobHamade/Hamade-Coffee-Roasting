@@ -41,7 +41,7 @@ Roasting Profiles/
 └── Columbia Supremo/
     └── RoastMasters/
         └── Medium Roast/
-            └── JacobTaylor_2024_09_15-FirstBatch.alog
+            └── JacobTaylor_2024_09_15-FirstBatch-100g.alog
 ```
 
 #### Note:
@@ -52,17 +52,18 @@ Inside of the Company Purchased From directory, you can store information about 
 All roasting profiles should follow the following naming convention:
 
 ```
-RoasterName_YYYY_MM_DD-Headline
+RoasterName_YYYY_MM_DD-Headline-UnroastedWeight
 ```
 
 - **RoasterName**: The name or nickname of the person who conducted the roast.
 - **YYYY_MM_DD**: The date the roast was conducted (Year, Month, Day).
 - **Headline**: A brief, descriptive headline about the roast (e.g., "FirstBatch", "BestRoastYet").
+- **Amount**: The amount of unroasted bean that was charged, in grams.
 
 For example:
 
 ```
-Zorro_2024_09_23-CompletelyScorched.alog
+Zorro_2024_09_23-CompletelyScorched-100g.alog
 ```
 
 This helps keep consistency across the profiles.
