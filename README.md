@@ -32,7 +32,7 @@ Roasting Profiles/
 └── Columbia Supremo/
     └── RoastMasters/
         └── Medium Roast/
-            └── JacobTaylor_2024_09_15-FirstBatch.json
+            └── JacobTaylor_2024_09_15-FirstBatch.alog
 ```
 
 ##### Note
@@ -53,7 +53,7 @@ RoasterName_YYYY_MM_DD-Headline
 For example:
 
 ```
-Zorro_2024_09_23-CompletelyScorched.json
+Zorro_2024_09_23-CompletelyScorched.alog
 ```
 
 This helps keep consistency across the profiles.
