@@ -1,0 +1,15 @@
+time of 00:00 takes it from the logical expression.
+time is the amount of time after the event has fired.
+the time is joined to the logical expression of the alarm with OR not AND.
+
+Simulator reruns the roast virtually to what happened at that time in the roast.
+- Asks for the alog file first.
+- all output variables are shown on the right and are exactly as they were during the roast no matter what you do.
+- runs the events and manual changes like up burner 10--taking the slider down a number means take burner down that number. In the simulation, it will apply the delta, not the value.
+- it marks the automated events as they happened unless you change the charge event time to be sooner, or other criteria not yet explored.
+- There is a lot of stuff that happens before charge in a profile that is simulated in the simulator.
+- You can press all the buttons as you would during a roast.
+- All alarms are simulated.
+- The simulation can be used to make a new profile.
+
+Once an alarm is greyed out, cannot get it to rerun.
