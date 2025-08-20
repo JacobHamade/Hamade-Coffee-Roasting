@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "name": "Guatemala_Libertad_Sweetness_Hottop",
+  "batchWeight": 250,
+  "ambientTemp": 22,
+  "chargeTemp": 180,
+  "chargeWeight": 250,
+  "beanTempUnit": "Celsius",
+  "environmentTempUnit": "Celsius",
+  "control": {
+    "heat": {
+      "type": "pid",
+      "mapping": "P1-P9"
+    },
+    "fan": {
+      "type": "pid",
+      "mapping": "F0-F8"
+    }
+  },
+  "events": [
+    { "type": "heat", "value": 9, "trigger": "temp", "triggerValue": 180 },
+    { "type": "fan", "value": 0, "trigger": "temp", "triggerValue": 180 },
+    { "type": "heat", "value": 7, "trigger": "temp", "triggerValue": 150 },
+    { "type": "fan", "value": 0, "trigger": "temp", "triggerValue": 150 },
+    { "type": "fan", "value": 2, "trigger": "temp", "triggerValue": 160 },
+    { "type": "heat", "value": 6, "trigger": "temp", "triggerValue": 170 },
+    { "type": "heat", "value": 4, "trigger": "temp", "triggerValue": 198 },
+    { "type": "fan", "value": 4, "trigger": "temp", "triggerValue": 198 },
+    { "type": "heat", "value": 0, "trigger": "temp", "triggerValue": 205 },
+    { "type": "fan", "value": 6, "trigger": "temp", "triggerValue": 205 }
+  ],
+  "targetCurves": {
+    "beanTemp": [
+      { "time": 0, "temp": 22 },
+      { "time": 240, "temp": 150 },
+      { "time": 480, "temp": 170 },
+      { "time": 495, "temp": 198 },
+      { "time": 580, "temp": 205 }
+    ],
+    "rateOfRise": [
+      { "time": 0, "ror": 15 },
+      { "time": 240, "ror": 10 },
+      { "time": 480, "ror": 5 },
+      { "time": 495, "ror": 3 },
+      { "time": 580, "ror": 1 }
+    ]
+  },
+  "markers": [
+    { "time": 240, "type": "yellowing", "beanTemp": 150, "note": "Yellow" },
+    { "time": 495, "type": "firstCrack", "beanTemp": 198, "note": "First Crack Start" },
+    { "time": 580, "type": "drop", "beanTemp": 205, "note": "Drop" }
+  ]
+}

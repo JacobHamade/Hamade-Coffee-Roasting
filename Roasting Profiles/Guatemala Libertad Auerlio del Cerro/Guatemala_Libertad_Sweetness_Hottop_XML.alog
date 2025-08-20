@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log version="4.4.0">
+  <roast>
+    <name>Guatemala_Libertad_Sweetness_Hottop</name>
+    <batchWeight>250</batchWeight>
+    <ambientTemp>22</ambientTemp>
+    <chargeTemp>180</chargeTemp>
+    <chargeWeight>250</chargeWeight>
+    <beanTempUnit>Celsius</beanTempUnit>
+    <environmentTempUnit>Celsius</environmentTempUnit>
+    <control>
+      <heat>
+        <type>pid</type>
+        <mapping>P1-P9</mapping>
+      </heat>
+      <fan>
+        <type>pid</type>
+        <mapping>F0-F8</mapping>
+      </fan>
+    </control>
+    <events>
+      <!-- Preheat to 180°C -->
+      <event type="heat" value="9" trigger="temp" triggerValue="180"/>
+      <event type="fan" value="0" trigger="temp" triggerValue="180"/>
+      <!-- Yellowing at 150°C -->
+      <event type="heat" value="7" trigger="temp" triggerValue="150"/>
+      <event type="fan" value="0" trigger="temp" triggerValue="150"/>
+      <!-- Early Maillard at 160°C -->
+      <event type="fan" value="2" trigger="temp" triggerValue="160"/>
+      <!-- Mid Maillard at 170°C -->
+      <event type="heat" value="6" trigger="temp" triggerValue="170"/>
+      <!-- First Crack start at 198°C -->
+      <event type="heat" value="4" trigger="temp" triggerValue="198"/>
+      <event type="fan" value="4" trigger="temp" triggerValue="198"/>
+      <!-- Drop at 205°C -->
+      <event type="heat" value="0" trigger="temp" triggerValue="205"/>
+      <event type="fan" value="6" trigger="temp" triggerValue="205"/>
+    </events>
+    <targetCurves>
+      <beanTemp>
+        <point time="0" temp="22"/>
+        <point time="240" temp="150"/>
+        <point time="480" temp="170"/>
+        <point time="495" temp="198"/>
+        <point time="580" temp="205"/>
+      </beanTemp>
+      <rateOfRise>
+        <point time="0" ror="15"/>
+        <point time="240" ror="10"/>
+        <point time="480" ror="5"/>
+        <point time="495" ror="3"/>
+        <point time="580" ror="1"/>
+      </rateOfRise>
+    </targetCurves>
+    <markers>
+      <marker time="240" type="yellowing" beanTemp="150" note="Yellow"/>
+      <marker time="495" type="firstCrack" beanTemp="198" note="First Crack Start"/>
+      <marker time="580" type="drop" beanTemp="205" note="Drop"/>
+    </markers>
+  </roast>
+</log>
